@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('/fonts/DejaVuSans.ttf') format('truetype');
+}
+
+
+.forms{
+    @apply ml-5  sm:col-span-6 sm:m-2 sm:gap-6 sm:align-middle sm:grid sm:grid-cols-10
+}
+.inputdiv{
+    @apply  bg-gray-200 rounded-lg  p-2 border w-4/5 col-span-8
+}
+.inputitself{
+    @apply w-full border-0 m-0 bg-transparent rounded-lg h-full
+}
+.inputlabel{
+    @apply sm:p-4 p-1 text-right sm:col-span-2
+}
+
+.tabledata{
+    @apply whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500
+}
+.tableheade{
+    @apply border-r px-6 py-4 dark:border-neutral-500
+}
+.theade{
+    @apply border-r px-6 py-4 dark:border-neutral-500
+}
+.trow{
+    @apply border-b dark:border-neutral-500
+}
+.dateinputs{
+    @apply  w-full px-2 text-3xl rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-blue-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-2xl sm:leading-10
+}
